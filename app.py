@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import pipeline
 
-nlp=pipeline('sentiment-analysis')
+nlp=pipeline("sentiment-analysis", model="distilbert/distilbert-base-uncased-finetuned-sst-2-english", revision="af0f99b")
 
 st.title('Sentiment-Analysizer')
 
